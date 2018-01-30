@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-30 10:59:26 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.icss.model.City" table="CITY" catalog="examwll" optimistic-lock="version">
+        <id name="uid" type="string">
+            <column name="UID" />
+            <generator class="assigned" />
+        </id>
+        <property name="citycode" type="string">
+            <column name="CITYCODE" />
+        </property>
+        <property name="cityname" type="string">
+            <column name="CITYNAME" />
+        </property>
+        <property name="countryname" type="string">
+            <column name="COUNTRYNAME" />
+        </property>
+        <property name="id" type="string">
+            <column name="ID" />
+        </property>
+        <property name="lat" type="string">
+            <column name="LAT" />
+        </property>
+        <property name="lng" type="string">
+            <column name="LNG" />
+        </property>
+        <property name="province" type="string">
+            <column name="PROVINCE" />
+        </property>
+    </class>
+</hibernate-mapping>
